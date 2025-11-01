@@ -1,0 +1,104 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-weaver"
+version = "1.0.0"
+description = "AGI-driven hexapod crawler platform with Claude AI reasoning and RL locomotion"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Crawler AGI Team", email = "team@crawler-agi.io"}
+]
+keywords = [
+    "robotics",
+    "hexapod",
+    "reinforcement-learning",
+    "claude-ai",
+    "esp32",
+    "mujoco",
+    "sim-to-real"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "numpy>=1.21.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+rl = [
+    "torch>=2.0.0",
+    "onnxruntime>=1.15.0",
+    "stable-baselines3>=2.0.0",
+    "gymnasium>=0.28.0",
+]
+
+claude = [
+    "anthropic>=0.5.0",
+]
+
+sim = [
+    "mujoco>=3.0.0",
+    "dm-control>=1.0.0",
+]
+
+deploy = [
+    "esptool>=3.3.0",
+    "platformio>=6.0.0",
+]
+
+all = [
+    "agent-weaver[dev,rl,claude,sim,deploy]",
+]
+
+[project.urls]
+Homepage = "https://github.com/crawler-agi/agent-weaver"
+Documentation = "https://crawler-agi.github.io/docs"
+Repository = "https://github.com/crawler-agi/agent-weaver"
+Issues = "https://github.com/crawler-agi/agent-weaver/issues"
+
+[project.scripts]
+crawler-agi = "agent_weaver.core.runner:main"
+
+[tool.setuptools.packages.find]
+include = ["agent_weaver*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+asyncio_mode = "auto"

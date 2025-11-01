@@ -1,0 +1,5 @@
+# Agent Weaver Configuration
+robot:
+  name: "Agent Weaver"
+control:
+  frequency_hz: 50

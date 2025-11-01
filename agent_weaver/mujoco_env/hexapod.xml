@@ -1,0 +1,3 @@
+<mujoco model="crawler_agi_hexapod">
+  <!-- Hexapod URDF for MuJoCo -->
+</mujoco>
