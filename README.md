@@ -1,5 +1,5 @@
 GXZEik8pFdM8oiWxK8e9jod9QajeT7RCpr57yZn9BAGS </br>
-https://x.com/crawleragicore
+https://x.com/agentweaver
 # Agent Weaver
 
 <p align="center">
@@ -11,7 +11,7 @@ https://x.com/crawleragicore
   <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8%2B-3776AB.svg?logo=python&logoColor=white" alt="Python"></a>
   <a href="https://isocpp.org"><img src="https://img.shields.io/badge/C%2B%2B-17-00599C.svg?logo=cplusplus&logoColor=white" alt="C++17"></a>
   <a href="https://docs.ros.org/en/humble/"><img src="https://img.shields.io/badge/ESP32-C3-00979D.svg?logo=espressif" alt="ESP32-C3"></a>
-  <a href="https://pump.fun/crawler"><img src="https://img.shields.io/badge/%24CRAWLER-pump.fun-ff0055.svg" alt="pump.fun"></a>
+  <a href="https://pump.fun/agentweaver"><img src="https://img.shields.io/badge/%24WEAVER-pump.fun-ff0055.svg" alt="pump.fun"></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ https://x.com/crawleragicore
 
 At its core, Agent Weaver receives natural language commands ("climb that fence", "patrol this area", "avoid the rocks"), Claude breaks them into subtasks, RL policies execute terrain-adaptive gaits, and the hardware layer closes the loop at 50Hz. The result is a robot that doesn't just walk—it thinks, learns, and adapts.
 
-> *The spider that became a thinker. A crawler with cognition.*
+> *The spider that became a thinker. An agent that weaves reality.*
 
 ---
 
@@ -188,7 +188,7 @@ agent_weaver/mujoco_env/
 
 ```bash
 # Clone the repository
-git clone https://github.com/crawler-agi/agent-weaver.git
+git clone https://github.com/ohmyzaid/agent-weaver.git
 cd agent-weaver
 
 # Install Python dependencies
@@ -208,17 +208,17 @@ python -m agent_weaver.core.runner
 ### Quick Start - Autonomous Navigation
 
 ```python
-from agent_weaver import CrawlerAGI, CrawlerConfig
+from agent_weaver import WeaverAGI, WeaverConfig
 from agent_weaver.claude_client import ClaudeMissionPlanner
 
-config = CrawlerConfig(
+config = WeaverConfig(
     esp32_host="192.168.1.100",
     enable_claude=True,
     rl_policy="adaptive_gait",
     control_frequency=50
 )
 
-robot = CrawlerAGI(config=config)
+robot = WeaverAGI(config=config)
 robot.initialize()
 
 # Natural language command
@@ -377,7 +377,7 @@ Agent-WEAVER outperforms decoupled IK baseline across all scenarios, with the la
 
 ## Community & Funding
 
-**Agent Weaver** is fully open-source and community-funded via **$CRAWLER** on pump.fun.
+**Agent Weaver** is fully open-source and community-funded via **$WEAVER** on pump.fun.
 
 Token holders get:
 - Early access to trained policy weights
@@ -390,11 +390,11 @@ Token holders get:
 ## Citation
 
 ```bibtex
-@software{crawleragi2026,
+@software{agentweaver2026,
   title     = {Agent Weaver: AGI-Driven Hexapod Locomotion Platform},
-  author    = {Crawler AGI Team},
+  author    = {Agent Weaver Team},
   year      = {2026},
-  url       = {https://github.com/crawler-agi/agent-weaver},
+  url       = {https://github.com/ohmyzaid/agent-weaver},
   license   = {Apache-2.0}
 }
 ```
@@ -409,7 +409,7 @@ This project is licensed under the **Apache License 2.0**.
 
 ## Support
 
-For questions and issues, please open an [issue](https://github.com/crawler-agi/agent-weaver/issues) or join our community Discord.
+For questions and issues, please open an [issue](https://github.com/ohmyzaid/agent-weaver/issues) or join our community Discord.
 
 ---
 
