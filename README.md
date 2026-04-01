@@ -3,7 +3,11 @@ https://x.com/AgentWeave80918
 # Agent Weaver
 
 <p align="center">
-  <img src="media/b.jpeg" alt="Agent Weaver Banner" width="100%"/>
+
+
+https://github.com/user-attachments/assets/e0902594-60cf-4cbc-a1d1-133e632cec07
+
+
 </p>
 
 <p align="center">
