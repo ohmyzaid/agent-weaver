@@ -18,9 +18,6 @@ https://x.com/AgentWeave80918
   <b>A hexapod robot that thinks before it moves.</b>
 </p>
 
-<p align="center">
-  <img src="media/v6.gif" alt="Agent Weaver Demo" width="80%"/>
-</p>
 
 ---
 
