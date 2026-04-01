@@ -31,7 +31,7 @@ At its core, Agent Weaver receives natural language commands ("climb that fence"
 
 ---
 <p align="center">
-![weaver1](https://github.com/user-attachments/assets/60a0e41a-6b62-4cdb-8b9a-f75014ed52ee)
+<img src="media/weaver1.gif" alt="Agent Weaver Demo" width="80%"/>
 
 </p>
 ## Three-Layer Autonomous Architecture
