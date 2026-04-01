@@ -79,6 +79,35 @@ Every module—from IK solving to RL inference to Claude API calls—runs in rea
 
 ---
 
+## How It Works
+
+Agent Weaver operates on a continuous cycle of **Perception, Reasoning, and Action**, blending edge-AI processing with high-performance physical execution.
+
+<p align="center">
+  <img src="media/weaver1.jpeg" alt="Agent Weaver Core Setup" width="80%" style="border-radius: 10px;"/>
+</p>
+
+### 🧠 1. Cognitive Planning & Vision
+The robot captures its surroundings and receives natural language objectives. **Claude AI** processes the mission context and terrain features to formulate a high-level sequence of movement tasks.
+
+<p align="center">
+  <img src="media/weaver.gif" alt="Semantic Reasoning" width="48%" style="border-radius: 8px;"/>
+  <img src="media/w2.gif" alt="Dynamic Adapting" width="48%" style="border-radius: 8px;"/>
+</p>
+
+### ⚡ 2. RL-Driven Gait Execution
+Once a path is determined, the Reinforcement Learning (RL) layer dynamically generates adaptable gait patterns. The robot selects appropriate gait mechanisms based on the surface roughness and steepness.
+
+<p align="center">
+  <img src="media/weaver.jpeg" alt="Terrain Adaptation" width="48%" style="border-radius: 8px;"/>
+  <img src="media/weaver3.jpeg" alt="Postural Control" width="48%" style="border-radius: 8px;"/>
+</p>
+
+### ⚙️ 3. Physical Actuation
+The Control Layer runs an Inverse Kinematics (IK) solver at 50Hz to precisely translate RL-generated joint targets into physical servo motions, ensuring stability and fluid steps across varying environments.
+
+---
+
 ## Key Technologies
 
 | Technology | Description | Key Spec |
